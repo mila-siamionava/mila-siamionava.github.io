@@ -58,31 +58,6 @@ A PowerPoint karaoke game built to make public speaking practice fun, spontaneou
 * ISO 27001
 * Cloud Security
 
-## Local Development
-
-Clone the repository:
-
-```bash
-git clone https://github.com/mila-siamionava/mila-siamionava.github.io.git
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Run the development server:
-
-```bash
-npm run dev
-```
-
-Build for production:
-
-```bash
-npm run build
-```
 
 ## Contact
 
