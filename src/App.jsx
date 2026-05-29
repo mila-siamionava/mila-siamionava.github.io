@@ -1,122 +1,226 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import "./App.css";
+import profileImage from "./assets/profile.png";
+import eventStartup from "./assets/eventStartup.png";
+import remiDansk from "./assets/remiDansk.png";
+import pitchWreck from "./assets/pitchWreck.png";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
+      <header className="header">
+        <h1>Mila Siamionava</h1>
+<div className="profileImageWrapper">
+  <img
+    src={profileImage}
+    alt="Mila Siamionava"
+    className="profileImage"
+  />
+</div>
+        
+          <p className="profileTitle">
+            Frontend Developer & Cybersecurity Enthusiast
           </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
 
-      <div className="ticks"></div>
+          <p className="profileDetails">
+            📍 Aarhus, Denmark |{" "}
+            <a href="mailto:mila.siamionava@icloud.com">
+              mila.siamionava@icloud.com
+            </a>
+          </p>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+          <div className="socialLinks">
+            <a
+              href="https://www.linkedin.com/in/mila-siamionava/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+            <span>|</span>
+            <a
+              href="https://github.com/mila-siamionava"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+            <span>|</span>
+            <a href="#projects">Projects</a>
+            <span>|</span>
+            <a href="#contact">Contact</a>
+          </div>
+</header>
+      <main>
+        <section id="home" className="profileDescription">
+          
+          <p>
+            My journey into tech started with a simple question: how do things
+            work?</p>
+            <p>Curiosity led me from education and communication into
+            frontend development and cybersecurity. Today, I build user-friendly
+            web applications, explore how systems can be secured, and enjoy
+            turning complex ideas into practical solutions.
+          </p>
+        </section>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+        <section id="skills" className="section">
+          <h2>Technical Skills</h2>
+
+          <div className="skillsGrid">
+            <div className="card">
+              <h3>Frontend</h3>
+              <p>React, Next.js,JavaScript, HTML, CSS</p>
+            </div>
+
+            <div className="card">
+              <h3>Backend & Tools</h3>
+              <p> Node.js • Express • REST APIs • SQLite • Git • GitHub •
+        Vercel • Render</p>
+            </div>
+
+            <div className="card">
+              <h3>Security</h3>
+              <p>GRC • IAM • SOC Operations • OWASP • ISO 27001 • Cloud Security</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" className="section">
+          <h2>Projects</h2>
+
+          <div className="projectsGrid">
+            <article className="card">
+              <h3>Events Startup Project</h3>
+              <img
+  src={eventStartup}
+  alt="Events Startup Project"
+  className="projectImage"
+/>
+              <p>
+                React event booking application with authentication, cart,
+                checkout, orders and API integration.
+              </p>
+              <div className="projectLinks">
+  <a
+    href="https://github.com/mila-siamionava/events-startup-project"
+    target="_blank"
+    rel="noreferrer"
+    className="githubButton"
+  >
+    View on GitHub
+  </a>
+
+  <a
+    href="https://events-startup-project-app.onrender.com/"
+    target="_blank"
+    rel="noreferrer"
+    className="demoButton"
+  >
+    Explore Project
+  </a>
+</div>
+            </article>
+            
+
+            <article className="card">
+              <h3>ReMi Dansk</h3>
+              <img
+    src={remiDansk}
+    alt="ReMi Dansk"
+    className="projectImage"
+  />
+              <p>
+                A cheerful web-based memory card game designed to help users
+                learn Danish vocabulary while having fun.
+              </p>
+              <div className="projectLinks">
+  <a
+    href="https://github.com/mila-siamionava/ReMi-Dansk"
+    target="_blank"
+    rel="noreferrer"
+    className="githubButton"
+  >
+    View on GitHub
+  </a>
+
+  <a
+    href="https://memory-game-1-sxsc.onrender.com"
+    target="_blank"
+    rel="noreferrer"
+    className="demoButton"
+  >
+    Explore Project
+  </a>
+</div>
+            </article>
+
+            <article className="card">
+              <h3>PitchWreck</h3>
+              <img
+    src={pitchWreck}
+    alt="PitchWreck"
+    className="projectImage"
+  />
+              <p>
+                A PowerPoint karaoke game built with React and Node.js, designed
+                to make public speaking practice fun, spontaneous and less
+                intimidating.
+              </p>
+              
+
+                
+ <div className="projectLinks">
+  <a
+    href="https://github.com/mila-siamionava/PitchWreck"
+    target="_blank"
+    rel="noreferrer"
+    className="githubButton"
+  >
+    View on GitHub
+  </a>
+
+  <a
+    href="https://your-demo-link.com"
+    target="_blank"
+    rel="noreferrer"
+    className="demoButton"
+  >
+    Explore Project
+  </a>
+</div>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" className="section contact">
+          <h2>Contact</h2>
+          <p>Let’s connect and build something meaningful.</p>
+
+          <div className="contactLinks">
+            <a href="mailto:mila.siamionava@icloud.com">Email</a>
+            <a
+              href="https://www.linkedin.com/in/mila-siamionava/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/mila-siamionava"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>© 2026 Mila Siamionava</p>
+      </footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
