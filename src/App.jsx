@@ -3,6 +3,7 @@ import profileImage from "./assets/profile.png";
 import eventStartup from "./assets/eventStartup.png";
 import remiDansk from "./assets/remiDansk.png";
 import pitchWreck from "./assets/pitchWreck.png";
+import cv from "./assets/MilaSiamionava.pdf";
 
 function App() {
   return (
@@ -44,9 +45,17 @@ function App() {
             >
               GitHub
             </a>
-            <span>|</span>
-            <a href="#projects">Projects</a>
-            <span>|</span>
+          <span>|</span>
+                      <a href="#projects">Projects</a>
+          <span>|</span>
+          <a
+            href={cv}
+            target="_blank"
+            rel="noreferrer"
+          >
+            CV
+          </a>
+          <span>|</span>
             <a href="#contact">Contact</a>
           </div>
 </header>
