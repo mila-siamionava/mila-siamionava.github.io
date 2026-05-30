@@ -6,6 +6,8 @@ import pitchWreck from "./assets/pitchWreck.png";
 import cv from "./assets/MilaSiamionava.pdf";
 
 function App() {
+  const user = "mila.siamionava";
+  const domain = "icloud.com";
   return (
     <>
       <header className="header">
@@ -24,8 +26,8 @@ function App() {
 
           <p className="profileDetails">
             📍 Aarhus, Denmark |{" "}
-            <a href="mailto:mila.siamionava@icloud.com">
-              mila.siamionava@icloud.com
+            <a href={`mailto:${user}@${domain}`}>
+              {user}@{domain}
             </a>
           </p>
 
@@ -55,8 +57,7 @@ function App() {
           >
             CV
           </a>
-          <span>|</span>
-            <a href="#contact">Contact</a>
+          
           </div>
 </header>
       <main>
@@ -206,7 +207,7 @@ function App() {
           <p>Let’s connect and build something meaningful.</p>
 
           <div className="contactLinks">
-            <a href="mailto:mila.siamionava@icloud.com">Email</a>
+            <a href={`mailto:${user}@${domain}`}>Email</a>
             <a
               href="https://www.linkedin.com/in/mila-siamionava/"
               target="_blank"
